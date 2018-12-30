@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -817,7 +817,6 @@ NoConn ~ 5150 6700
 NoConn ~ 5150 6900
 NoConn ~ 5150 7000
 NoConn ~ 4350 1700
-NoConn ~ 4050 1750
 NoConn ~ 3150 1700
 NoConn ~ 3650 1700
 Wire Wire Line
@@ -883,9 +882,14 @@ Wire Wire Line
 	6200 4950 6200 5000
 Wire Wire Line
 	6200 5200 6200 5800
-Wire Bus Line
-	5950 4000 5950 4400
 Connection ~ 6200 5800
 Wire Wire Line
 	6200 5800 6700 5800
+Wire Wire Line
+	4050 1700 4050 1150
+Wire Wire Line
+	4050 1150 3500 1150
+Wire Bus Line
+	5950 4000 5950 4400
+Connection ~ 3500 1150
 $EndSCHEMATC

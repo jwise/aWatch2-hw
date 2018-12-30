@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -275,7 +275,7 @@ $EndComp
 Wire Wire Line
 	6100 2800 6100 2900
 Wire Wire Line
-	6100 2900 8100 2900
+	6100 2900 6500 2900
 Connection ~ 6100 2800
 Wire Wire Line
 	6100 2800 7100 2800
@@ -314,8 +314,6 @@ Wire Wire Line
 	6350 3400 6350 3500
 Connection ~ 6350 3500
 Wire Wire Line
-	6350 3500 6700 3500
-Wire Wire Line
 	6700 3500 6700 3400
 Wire Wire Line
 	6700 3400 8100 3400
@@ -344,8 +342,6 @@ F 3 "" H 3450 1850 50  0001 C CNN
 	1    3450 1850
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5850 3700
-NoConn ~ 5850 3800
 NoConn ~ 5850 4000
 NoConn ~ 5850 4100
 NoConn ~ 5850 4300
@@ -354,7 +350,7 @@ Wire Wire Line
 	7550 2800 7550 3500
 Connection ~ 7550 2800
 Wire Wire Line
-	7550 3500 7550 4800
+	7550 3500 7550 3800
 $Comp
 L awatch-parts:MAX14690 U?
 U 1 1 5C35AD5E
@@ -512,4 +508,66 @@ Wire Wire Line
 Connection ~ 3600 3800
 Wire Wire Line
 	3600 3800 3100 3800
+Wire Wire Line
+	6500 3700 5850 3700
+$Comp
+L Device:C_Small C?
+U 1 1 5C4627BE
+P 7200 3800
+F 0 "C?" V 7063 3800 50  0000 C CNN
+F 1 "1µF" V 6972 3800 50  0000 C CNN
+F 2 "" H 7200 3800 50  0001 C CNN
+F 3 "~" H 7200 3800 50  0001 C CNN
+	1    7200 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 3800 6700 3800
+Wire Wire Line
+	7300 3800 7550 3800
+Connection ~ 7550 3800
+Wire Wire Line
+	7550 3800 7550 4800
+Wire Wire Line
+	6700 3800 6700 3700
+Wire Wire Line
+	6700 3700 8100 3700
+Connection ~ 6700 3800
+Wire Wire Line
+	6700 3800 5850 3800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C469263
+P 8100 3700
+F 0 "#PWR?" H 8100 3550 50  0001 C CNN
+F 1 "+3.3V" V 8115 3828 50  0000 L CNN
+F 2 "" H 8100 3700 50  0001 C CNN
+F 3 "" H 8100 3700 50  0001 C CNN
+	1    8100 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3500 6700 3500
+Wire Wire Line
+	6500 3700 6500 2900
+Connection ~ 6500 2900
+Wire Wire Line
+	6500 2900 8100 2900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C46BDE5
+P 2700 1150
+F 0 "#PWR?" H 2700 1000 50  0001 C CNN
+F 1 "+3.3V" H 2715 1323 50  0000 C CNN
+F 2 "" H 2700 1150 50  0001 C CNN
+F 3 "" H 2700 1150 50  0001 C CNN
+	1    2700 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 1250 2    50   BiDi ~ 0
++3.3V
+Wire Wire Line
+	2800 1250 2700 1250
+Wire Wire Line
+	2700 1250 2700 1150
 $EndSCHEMATC

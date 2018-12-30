@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -131,4 +131,19 @@ Wire Wire Line
 	5000 2600 6300 2600
 Wire Wire Line
 	6300 2700 5000 2700
+$Sheet
+S 5250 2800 550  400 
+U 5C4574A7
+F0 "Display" 50
+F1 "awatch-display.sch" 50
+F2 "DISP_MOSI" I L 5250 2900 50 
+F3 "DISP_SCK" I L 5250 3000 50 
+F4 "DISP_CSN" I L 5250 3100 50 
+$EndSheet
+Wire Wire Line
+	5000 2900 5250 2900
+Wire Wire Line
+	5250 3000 5000 3000
+Wire Wire Line
+	5000 3100 5250 3100
 $EndSCHEMATC

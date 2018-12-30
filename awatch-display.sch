@@ -1,0 +1,228 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L awatch-parts:LS013B7DH05 U?
+U 1 1 5C4574CC
+P 5150 3200
+F 0 "U?" H 6129 2796 50  0000 L CNN
+F 1 "LS013B7DH05" H 6129 2705 50  0000 L CNN
+F 2 "" H 5150 3200 50  0001 C CNN
+F 3 "" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3150 5750 3000
+Wire Wire Line
+	5750 3000 5850 3000
+Wire Wire Line
+	5850 3000 5850 3150
+Wire Wire Line
+	5150 3800 4850 3800
+Wire Wire Line
+	5150 3900 5050 3900
+Wire Wire Line
+	5150 3700 4950 3700
+Wire Wire Line
+	4950 3700 4950 4100
+Wire Wire Line
+	5050 3900 5050 4100
+$Comp
+L Device:R_Small_US R?
+U 1 1 5C45C395
+P 5050 4200
+F 0 "R?" H 5118 4246 50  0000 L CNN
+F 1 "0" H 5118 4155 50  0000 L CNN
+F 2 "" H 5050 4200 50  0001 C CNN
+F 3 "~" H 5050 4200 50  0001 C CNN
+	1    5050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5C45C3C8
+P 4950 4200
+F 0 "R?" H 4883 4246 50  0000 R CNN
+F 1 "0" H 4883 4155 50  0000 R CNN
+F 2 "" H 4950 4200 50  0001 C CNN
+F 3 "~" H 4950 4200 50  0001 C CNN
+	1    4950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5C45C419
+P 4850 3100
+F 0 "R?" H 4783 3146 50  0000 R CNN
+F 1 "0" H 4783 3055 50  0000 R CNN
+F 2 "" H 4850 3100 50  0001 C CNN
+F 3 "~" H 4850 3100 50  0001 C CNN
+	1    4850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3800 4850 3200
+Wire Wire Line
+	5150 3400 4200 3400
+Wire Wire Line
+	5150 3500 4200 3500
+Wire Wire Line
+	5150 3600 4200 3600
+Text HLabel 4200 3500 0    50   Input ~ 0
+DISP_MOSI
+Text HLabel 4200 3400 0    50   Input ~ 0
+DISP_SCK
+Text HLabel 4200 3600 0    50   Input ~ 0
+DISP_CSN
+$Comp
+L power:GND #PWR?
+U 1 1 5C45D07D
+P 5750 4500
+F 0 "#PWR?" H 5750 4250 50  0001 C CNN
+F 1 "GND" H 5755 4327 50  0000 C CNN
+F 2 "" H 5750 4500 50  0001 C CNN
+F 3 "" H 5750 4500 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4150 5750 4300
+Wire Wire Line
+	5750 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4150
+Connection ~ 5750 4300
+Wire Wire Line
+	5750 4300 5750 4500
+$Comp
+L power:+2V8 #PWR?
+U 1 1 5C45D26E
+P 5750 2800
+F 0 "#PWR?" H 5750 2650 50  0001 C CNN
+F 1 "+2V8" H 5765 2973 50  0000 C CNN
+F 2 "" H 5750 2800 50  0001 C CNN
+F 3 "" H 5750 2800 50  0001 C CNN
+	1    5750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2800 5750 3000
+Connection ~ 5750 3000
+$Comp
+L power:+2V8 #PWR?
+U 1 1 5C45DE11
+P 4850 2800
+F 0 "#PWR?" H 4850 2650 50  0001 C CNN
+F 1 "+2V8" H 4865 2973 50  0000 C CNN
+F 2 "" H 4850 2800 50  0001 C CNN
+F 3 "" H 4850 2800 50  0001 C CNN
+	1    4850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2800 4850 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5C45DF78
+P 4950 4500
+F 0 "#PWR?" H 4950 4250 50  0001 C CNN
+F 1 "GND" H 4955 4327 50  0000 C CNN
+F 2 "" H 4950 4500 50  0001 C CNN
+F 3 "" H 4950 4500 50  0001 C CNN
+	1    4950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4300 4950 4400
+Wire Wire Line
+	4950 4400 5050 4400
+Wire Wire Line
+	5050 4400 5050 4300
+Connection ~ 4950 4400
+Wire Wire Line
+	4950 4400 4950 4500
+$Comp
+L Device:C_Small C?
+U 1 1 5C45E33C
+P 6400 3050
+F 0 "C?" H 6492 3096 50  0000 L CNN
+F 1 "1µF" H 6492 3005 50  0000 L CNN
+F 2 "" H 6400 3050 50  0001 C CNN
+F 3 "~" H 6400 3050 50  0001 C CNN
+	1    6400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+2V8 #PWR?
+U 1 1 5C45E392
+P 6400 2800
+F 0 "#PWR?" H 6400 2650 50  0001 C CNN
+F 1 "+2V8" H 6415 2973 50  0000 C CNN
+F 2 "" H 6400 2800 50  0001 C CNN
+F 3 "" H 6400 2800 50  0001 C CNN
+	1    6400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45E3CA
+P 6400 3300
+F 0 "#PWR?" H 6400 3050 50  0001 C CNN
+F 1 "GND" H 6405 3127 50  0000 C CNN
+F 2 "" H 6400 3300 50  0001 C CNN
+F 3 "" H 6400 3300 50  0001 C CNN
+	1    6400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2800 6400 2950
+Wire Wire Line
+	6400 3150 6400 3300
+$Comp
+L power:+2V8 #PWR?
+U 1 1 5C45EF3A
+P 6800 2800
+F 0 "#PWR?" H 6800 2650 50  0001 C CNN
+F 1 "+2V8" H 6815 2973 50  0000 C CNN
+F 2 "" H 6800 2800 50  0001 C CNN
+F 3 "" H 6800 2800 50  0001 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45EF4F
+P 6800 3300
+F 0 "#PWR?" H 6800 3050 50  0001 C CNN
+F 1 "GND" H 6805 3127 50  0000 C CNN
+F 2 "" H 6800 3300 50  0001 C CNN
+F 3 "" H 6800 3300 50  0001 C CNN
+	1    6800 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 2950 2    50   Input ~ 0
++2V8
+Wire Wire Line
+	6950 2950 6800 2950
+Wire Wire Line
+	6800 2950 6800 2800
+Text GLabel 6950 3150 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6950 3150 6800 3150
+Wire Wire Line
+	6800 3150 6800 3300
+$EndSCHEMATC
