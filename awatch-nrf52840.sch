@@ -805,7 +805,6 @@ Connection ~ 5950 1550
 NoConn ~ 5150 4900
 NoConn ~ 5150 5000
 NoConn ~ 5150 5200
-NoConn ~ 5150 5800
 NoConn ~ 5150 5900
 NoConn ~ 5150 6000
 NoConn ~ 5150 6200
@@ -854,6 +853,39 @@ F 3 "" H 5800 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 4950 5800 5000
+Text HLabel 6700 5800 2    50   Input ~ 0
+SENS_IMU_INT
+Wire Wire Line
+	5150 5800 6200 5800
+$Comp
+L Device:R_Small_US R?
+U 1 1 5C442EC0
+P 6200 5100
+F 0 "R?" H 6268 5146 50  0000 L CNN
+F 1 "n/c" H 6268 5055 50  0000 L CNN
+F 2 "" H 6200 5100 50  0001 C CNN
+F 3 "~" H 6200 5100 50  0001 C CNN
+	1    6200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+2V8 #PWR?
+U 1 1 5C44AE8F
+P 6200 4950
+F 0 "#PWR?" H 6200 4800 50  0001 C CNN
+F 1 "+2V8" H 6142 4987 50  0000 R CNN
+F 2 "" H 6200 4950 50  0001 C CNN
+F 3 "" H 6200 4950 50  0001 C CNN
+	1    6200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4950 6200 5000
+Wire Wire Line
+	6200 5200 6200 5800
 Wire Bus Line
 	5950 4000 5950 4400
+Connection ~ 6200 5800
+Wire Wire Line
+	6200 5800 6700 5800
 $EndSCHEMATC
