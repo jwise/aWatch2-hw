@@ -1,0 +1,152 @@
+aWatch2:
+  Pebble 2-class watch with modern, easily sourcable, components.
+  Application compatible with B&W Pebble programs using FreeRTOS.
+
+SoC: Nordic nRF52840
+       1MB flash
+       256 kB RAM
+       64MHz Cortex-M4
+       Bluetooth 5, BLE, ANT+ support
+       NFC-A tag support
+       sleep current ~3.2 uA
+       CPU max current ~5 mA
+       Vdd 1.7 -> 3.6v, or Vddh 2.5 -> 5.5v
+       
+       pad cap = 3 pF
+       
+       connections:
+         PMIC (I2C)
+           PMIC_SCL  = P0.04
+           PMIC_SDA  = P0.05
+         PMIC ADC
+           PMIC_SENS = P0.02
+         display (SPI, dedicated)
+           DISP_CSN  = P0.14
+           DISP_SCK  = P0.15
+           DISP_MOSI = P0.16
+         flash (QSPI, dedicated)
+           FLASH_CSN = P0.17
+           FLASH_SCK = P0.19
+           FLASH_D0 = P0.20
+           FLASH_D1 = P0.21
+           FLASH_D2 = P0.22
+           FLASH_D3 = P0.23
+         sensors (I2C)
+           SENS_SCL = P0.06
+           SENS_SDA = P0.08
+         backlight PWM
+           BL_PWM    = P0.13
+           BL_EN     = P0.28
+         microphone
+           MIC_CLK   = P0.00
+           MIC_DIN   = P0.01
+           MIC_STBY  = P0.02
+         UART x2
+           UARTDBG_RX = P0.26
+           UARTDBG_TX = P0.27
+           UARTSS_RX  = P0.24
+           UARTSS_TX  = P0.25
+         vibe driver (I2C, shared with PMIC)
+         buttons x4
+           BTN_BACK   = P1.01
+           BTN_UP     = P1.02
+           BTN_CENTER = P1.03
+           BTN_DOWN   = P1.04
+
+32MHz xtal (8pF +/- 10ppm)
+  ABM11W-32.0000MHZ-8-B1U-T3, or similar
+
+Display: Sharp LS013B7DH05
+         (ZIF connector version of Pebble B&W display; Zebra version is
+         NRND)
+         MOQ of 1120?
+         
+         mating connector info https://learn.adafruit.com/adafruit-sharp-memory-display-breakout/downloads
+         ?
+
+         XXX needs 5V, 50-90 uW (13-24 uA battery)
+         XXX boost power from LTC3221 ($3.79 qty1)
+         XXX   65% efficient, 8 uA Iq
+         XXX   better at 2.7V, 80%+
+         XXX WRONG: that's for Pebble zebra one
+         
+         Vdd 2.7-3.3v, typ 3.3v
+           * needs level shifter?? 2.7v vddio?
+         power consumption unspec
+         
+         mating connector:
+           Panasonic AYF531035 $1.20 qty1 not right-angle, ZIF-style
+             (also usable inverted / bent over)
+           SMK CFP-4610-0150F
+           Molex 51441-1093 $5.26 qty1 ZIF-style right-angle (!)
+
+Backlight driver: 
+  look at Pebble bigboard; check nRF to see if PWM available on I/O... Maxim
+  ICs too big
+  
+  AS1312 boost converter?
+
+Battery:
+  Pebble 2 battery replacement:
+  https://www.aliexpress.com/item/TTVXO-160mAh-for-Pebble-Time-2-Battery-Smartwatch-LSSP441522AE-Pebble-Time-Battery/32890645958.html
+  charging at 1C = 160 mA, so Rset = (2000 A/A) * 1V / 160mA = 12.5 kOhm
+
+PMIC: MAX14690?
+
+SPI flash: 128Mbit (W25Q128JVPIQTR-ND)
+  8-WSON (6x5)
+  Vdd = 2.7 - 3.6V
+  
+Pebble Time uses S29VS128R (CFI flash!)
+
+
+Vibrate motor driver: DRV2603? (same as Pebble Time)
+  can use DRV2604 for I2C ... 600 uA Iq! shutdown current is 1.75 uA
+  1.9 up to 5 uA STANDBY=1
+  0x58 / 0x5a i2c address
+  $2.77 qty1
+
+Microphone: SPK0641HT4H-1?
+            (same as Pebble Time)
+            
+            1.8 -> 3.6v
+            26 uA asleep
+
+Accelerometer (compass?): 
+BMI260 has built in step counter
+  60uA 
+  unobtanium
+  
+Pebble Time uses BMI160
+  0x68/0x69 I2C
+  
+Pebble Time uses MAG3110
+(prefer to use BMM150 to daisy chain with BMI160?  BMM150 recommends BMI055?)
+
+BMM150
+  0x10 I2C
+  
+Altimeter?
+  BMP388 (selected):
+    0x76 / 0x77 I2C
+    300-1250 hPa
+    1.65 -> 3.6V Vdd
+    2.7 uA @ 1Hz
+    +/- .4 hPa absolute, +/- .08 hPa relative
+    $3.93
+  BMP280:
+    0x76 / 0x77 I2C
+    300 - 1100 hPa
+    +/- 1 hPa absolute, +/- .12 hPa relative
+    2.74 uA @ 1Hz, .1 uA in sleep
+    $3.48
+
+ambient light sensor?
+  LTR-329ALS-01 .01lux -> 64 klux, I2C address 0x29
+  160 uA active; 5 uA sleep
+
+  Avago APDS-9306-065, 1.7 - 3.6v, 85 uA active, 2 uA sleep, i2c address 0x52
+
+programming header / SWD
+  FTxxxx
+  
