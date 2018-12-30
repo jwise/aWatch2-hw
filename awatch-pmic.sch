@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -108,8 +108,6 @@ F 3 "~" H 3450 2050 50  0001 C CNN
 	1    3450 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 1850 3450 1900
 $Comp
 L power:GND #PWR?
 U 1 1 5C35C328
@@ -187,7 +185,7 @@ Connection ~ 6800 2200
 Wire Wire Line
 	6800 2200 6900 2200
 Wire Wire Line
-	5850 2300 6550 2300
+	5850 2300 6450 2300
 Wire Wire Line
 	5850 2400 5950 2400
 Wire Wire Line
@@ -218,10 +216,7 @@ Wire Wire Line
 Connection ~ 7550 2400
 Wire Wire Line
 	7550 2400 7550 2600
-Wire Wire Line
-	6800 2300 8100 2300
-Connection ~ 6800 2300
-Text HLabel 8100 2300 2    50   Input ~ 0
+Text HLabel 8100 1900 2    50   Input ~ 0
 BAT_THM
 Text HLabel 8100 2500 2    50   Input ~ 0
 BAT+
@@ -334,12 +329,12 @@ $EndComp
 $Comp
 L power:VBUS #PWR?
 U 1 1 5C36F827
-P 3450 1850
-F 0 "#PWR?" H 3450 1700 50  0001 C CNN
-F 1 "VBUS" H 3465 2023 50  0000 C CNN
-F 2 "" H 3450 1850 50  0001 C CNN
-F 3 "" H 3450 1850 50  0001 C CNN
-	1    3450 1850
+P 3450 1400
+F 0 "#PWR?" H 3450 1250 50  0001 C CNN
+F 1 "VBUS" H 3465 1573 50  0000 C CNN
+F 2 "" H 3450 1400 50  0001 C CNN
+F 3 "" H 3450 1400 50  0001 C CNN
+	1    3450 1400
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5850 4000
@@ -570,4 +565,30 @@ Wire Wire Line
 	2800 1250 2700 1250
 Wire Wire Line
 	2700 1250 2700 1150
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C478808
+P 3750 1550
+F 0 "J?" H 3830 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 3830 1451 50  0000 L CNN
+F 2 "" H 3750 1550 50  0001 C CNN
+F 3 "~" H 3750 1550 50  0001 C CNN
+	1    3750 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1400 3450 1550
+Wire Wire Line
+	3450 1550 3550 1550
+Wire Wire Line
+	3550 1650 3450 1650
+Wire Wire Line
+	3450 1650 3450 1900
+Wire Wire Line
+	6450 2300 6450 1900
+Wire Wire Line
+	6450 1900 8100 1900
+Connection ~ 6450 2300
+Wire Wire Line
+	6450 2300 6550 2300
 $EndSCHEMATC
