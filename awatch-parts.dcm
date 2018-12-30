@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP W25Q128JV
+D 3V 128Mbit QSPI flash
+K spi flash qspi
+$ENDCMP
+#
+#End Doc Library

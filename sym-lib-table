@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name awatch-parts)(type Legacy)(uri /Users/joshua/pebble-dev/hw/awatch2/awatch2/awatch-parts.lib)(options "")(descr ""))
+)
