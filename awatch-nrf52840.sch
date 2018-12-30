@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -589,7 +589,7 @@ MIC_CLK
 Text HLabel 6700 2100 2    50   Input ~ 0
 MIC_DIN
 Text HLabel 6700 2200 2    50   Output ~ 0
-MIC_STBY
+MIC_nSTBY
 Text HLabel 6700 2400 2    50   Output ~ 0
 PMIC_SCL
 Text HLabel 6700 2500 2    50   BiDi ~ 0
