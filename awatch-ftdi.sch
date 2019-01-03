@@ -1081,7 +1081,7 @@ U 1 1 5C6B2B77
 P 10200 2800
 F 0 "J802" H 10280 2792 50  0000 L CNN
 F 1 "Conn_01x06" H 10280 2701 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10200 2800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10200 2800 50  0001 C CNN
 F 3 "~" H 10200 2800 50  0001 C CNN
 	1    10200 2800
 	1    0    0    -1  
@@ -1149,8 +1149,6 @@ Wire Wire Line
 	2300 3350 2500 3350
 Wire Wire Line
 	2500 3350 2500 2550
-Wire Wire Line
-	2500 2550 2850 2550
 Connection ~ 3150 2550
 $Comp
 L power:VBUS #PWR0198
@@ -1231,8 +1229,6 @@ $EndComp
 Wire Wire Line
 	2850 2400 2850 2550
 Connection ~ 2850 2550
-Wire Wire Line
-	2850 2550 3150 2550
 $Comp
 L Device:C_Small C804
 U 1 1 5C2C71F4
@@ -1267,4 +1263,26 @@ Text Label 3750 5350 0    50   ~ 0
 EEDATA
 Text Label 2650 5450 0    50   ~ 0
 DO
+Wire Wire Line
+	2850 2550 3150 2550
+Wire Wire Line
+	2500 2550 2850 2550
+$Comp
+L Device:C_Small C818
+U 1 1 5C2F6C15
+P 4300 2700
+F 0 "C818" H 4392 2746 50  0000 L CNN
+F 1 ".1µF" H 4392 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 2700 50  0001 C CNN
+F 3 "~" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2550 4300 2600
+Wire Wire Line
+	4300 2800 4300 2950
+Wire Wire Line
+	4300 2950 4050 2950
+Connection ~ 4050 2950
 $EndSCHEMATC
