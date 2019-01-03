@@ -1255,4 +1255,16 @@ F 3 "~" H 4350 1500 50  0001 C CNN
 	1    4350 1500
 	1    0    0    -1  
 $EndComp
+Text Label 2750 3550 0    50   ~ 0
+USB_D+
+Text Label 2750 3650 0    50   ~ 0
+USB_D-
+Text Label 3750 5150 0    50   ~ 0
+EECS
+Text Label 3750 5250 0    50   ~ 0
+EECLK
+Text Label 3750 5350 0    50   ~ 0
+EEDATA
+Text Label 2650 5450 0    50   ~ 0
+DO
 $EndSCHEMATC
