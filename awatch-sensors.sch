@@ -977,4 +977,28 @@ Wire Wire Line
 Wire Wire Line
 	9150 3800 9150 3650
 Connection ~ 9050 3800
+Text Label 1900 4350 0    50   ~ 0
+MAG_SCK
+Text Label 1900 4250 0    50   ~ 0
+MAG_SDI
+Text Label 1850 6250 1    50   ~ 0
+MAG_SDO
+Text Label 1950 6100 1    50   ~ 0
+MAG_PS
+Text Label 2750 5150 0    50   ~ 0
+MAG_VDD
+Text Label 3350 4250 0    50   ~ 0
+IMUM_SDA
+Text Label 3350 4350 0    50   ~ 0
+IMUM_SCK
+Text Label 3700 3550 0    50   ~ 0
+IMU_VDD
+Text Label 4950 4250 0    50   ~ 0
+IMU_SDA
+Text Label 4950 4350 0    50   ~ 0
+IMU_SCK
+Text Label 4950 4450 0    50   ~ 0
+IMU_CSB
+Text Label 4950 4150 0    50   ~ 0
+IMU_SDO
 $EndSCHEMATC
