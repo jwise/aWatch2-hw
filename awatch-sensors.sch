@@ -972,4 +972,9 @@ Wire Wire Line
 	9900 2450 10350 2450
 Wire Wire Line
 	10350 2450 10350 2500
+Wire Wire Line
+	9050 3800 9150 3800
+Wire Wire Line
+	9150 3800 9150 3650
+Connection ~ 9050 3800
 $EndSCHEMATC
