@@ -572,7 +572,7 @@ U 1 1 5C478808
 P 3750 1550
 F 0 "J301" H 3830 1542 50  0000 L CNN
 F 1 "Conn_01x02" H 3830 1451 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3750 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 1550 50  0001 C CNN
 F 3 "~" H 3750 1550 50  0001 C CNN
 	1    3750 1550
 	1    0    0    -1  
@@ -640,4 +640,22 @@ Wire Wire Line
 Connection ~ 7850 3700
 Wire Wire Line
 	7850 3700 8100 3700
+Text Label 4250 2200 0    50   ~ 0
+MAX_SET
+Text Label 4000 1900 0    50   ~ 0
+MAX_CHGIN
+Text Label 4100 2700 0    50   ~ 0
+MAX_SCL
+Text Label 4100 2800 0    50   ~ 0
+MAX_SDA
+Text Label 4200 3000 0    50   ~ 0
+MAX_MON
+Text Label 4250 3800 0    50   ~ 0
+MAX_RSTN
+Text Label 5950 2200 0    50   ~ 0
+MAX_CAP
+Text Label 5950 2300 0    50   ~ 0
+MAX_THM
+Text Label 5950 3500 0    50   ~ 0
+MAX_B2LX
 $EndSCHEMATC
