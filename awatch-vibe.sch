@@ -276,4 +276,16 @@ Wire Wire Line
 Wire Wire Line
 	5650 3350 5650 3800
 Connection ~ 4600 3350
+Text Label 5850 3500 0    50   ~ 0
+VIBE_REG
+Text Label 4950 3350 0    50   ~ 0
+VIBE_VDD
+Text Label 4750 4250 0    50   ~ 0
+VIBE_SCL_IN
+Text Label 4750 4350 0    50   ~ 0
+VIBE_SDA_IN
+Text Label 4750 4050 0    50   ~ 0
+VIBE_EN
+Text Label 4900 4150 0    50   ~ 0
+VIBE_IN
 $EndSCHEMATC
