@@ -462,10 +462,10 @@ Wire Wire Line
 Wire Wire Line
 	900  950  900  1050
 $Comp
-L Device:C_Small C4
+L Device:C_Small C3
 U 1 1 5C26D362
 P 2400 2900
-F 0 "C4" H 2309 2946 50  0000 R CNN
+F 0 "C3" H 2309 2946 50  0000 R CNN
 F 1 "1.0pF NP0" H 2309 2855 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2400 2900 50  0001 C CNN
 F 3 "~" H 2400 2900 50  0001 C CNN
@@ -503,10 +503,8 @@ Wire Wire Line
 	2400 2700 2550 2700
 Wire Wire Line
 	2400 3000 2400 3100
-Text HLabel 1950 2700 0    50   BiDi ~ 0
+Text HLabel 1700 2700 0    50   BiDi ~ 0
 NRF_ANT
-Wire Wire Line
-	1950 2700 2050 2700
 Text Label 6050 4400 0    50   ~ 0
 FLASH_D[0..3]
 Wire Bus Line
@@ -880,8 +878,6 @@ F 3 "~" H 1350 2250 50  0001 C CNN
 	1    1350 2250
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	5950 4000 5950 4400
 $Comp
 L Device:C_Small C6
 U 1 1 5C2C501B
@@ -893,4 +889,37 @@ F 3 "~" H 900 2250 50  0001 C CNN
 	1    900  2250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5C319D98
+P 1900 2900
+F 0 "C4" H 1809 2946 50  0000 R CNN
+F 1 "1.0pF NP0" H 1809 2855 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1900 2900 50  0001 C CNN
+F 3 "~" H 1900 2900 50  0001 C CNN
+	1    1900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2700 1900 2700
+Wire Wire Line
+	1900 2700 1900 2800
+Connection ~ 1900 2700
+Wire Wire Line
+	1900 2700 2050 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5C322A37
+P 1900 3100
+F 0 "#PWR?" H 1900 2850 50  0001 C CNN
+F 1 "GND" H 1905 2927 50  0000 C CNN
+F 2 "" H 1900 3100 50  0001 C CNN
+F 3 "" H 1900 3100 50  0001 C CNN
+	1    1900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3000 1900 3100
+Wire Bus Line
+	5950 4000 5950 4400
 $EndSCHEMATC
