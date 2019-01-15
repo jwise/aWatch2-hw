@@ -659,14 +659,14 @@ Wire Wire Line
 	6700 3000 6600 3000
 Wire Wire Line
 	5150 2900 6600 2900
-Text HLabel 6700 2700 2    50   BiDi ~ 0
+Text HLabel 6700 6100 2    50   BiDi ~ 0
 NRF_CHICKEN0
 Text HLabel 6700 3100 2    50   BiDi ~ 0
 NRF_CHICKEN1
 Text HLabel 6700 3200 2    50   BiDi ~ 0
 NRF_CHICKEN2
 Wire Wire Line
-	6700 2700 5150 2700
+	6700 6100 5150 6100
 Wire Wire Line
 	5150 3100 6700 3100
 Wire Wire Line
@@ -755,7 +755,7 @@ NoConn ~ 5150 5200
 NoConn ~ 5150 5900
 NoConn ~ 5150 6000
 NoConn ~ 5150 5800
-NoConn ~ 5150 6100
+NoConn ~ 5150 2700
 NoConn ~ 5150 6300
 NoConn ~ 5150 6400
 NoConn ~ 5150 6500
