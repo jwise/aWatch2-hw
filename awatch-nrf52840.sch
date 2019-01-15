@@ -591,14 +591,10 @@ Text HLabel 5400 4300 2    50   Input ~ 0
 UARTSS_RX
 Text HLabel 5400 4400 2    50   Output ~ 0
 UARTSS_TX
-Text HLabel 5400 4500 2    50   Input ~ 0
+Text HLabel 6700 2600 2    50   Input ~ 0
 UARTDBG_RX
-Text HLabel 5400 4600 2    50   Output ~ 0
+Text HLabel 6700 2800 2    50   Output ~ 0
 UARTDBG_TX
-Wire Wire Line
-	5400 4600 5150 4600
-Wire Wire Line
-	5150 4500 5400 4500
 Wire Wire Line
 	5400 4400 5150 4400
 Wire Wire Line
@@ -611,18 +607,12 @@ Text HLabel 6700 4700 2    50   Output ~ 0
 BL_EN
 Wire Wire Line
 	6700 4700 5150 4700
-Text HLabel 6700 2600 2    50   Output ~ 0
+Text HLabel 6700 4600 2    50   Output ~ 0
 SENS_SCL
-Text HLabel 6700 2800 2    50   BiDi ~ 0
+Text HLabel 6700 4500 2    50   BiDi ~ 0
 SENS_SDA
 Wire Wire Line
-	6700 2600 5950 2600
-Wire Wire Line
-	6700 2800 6250 2800
-Wire Wire Line
 	6700 5300 5150 5300
-Wire Wire Line
-	6700 5600 5150 5600
 Wire Wire Line
 	5150 5500 6700 5500
 Wire Wire Line
@@ -715,23 +705,23 @@ $EndComp
 $Comp
 L Device:R_Small_US R3
 U 1 1 5C2F1FF1
-P 5950 1700
-F 0 "R3" H 6018 1746 50  0000 L CNN
-F 1 "2.2k" H 6018 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5950 1700 50  0001 C CNN
-F 3 "~" H 5950 1700 50  0001 C CNN
-	1    5950 1700
+P 8800 3800
+F 0 "R3" H 8868 3846 50  0000 L CNN
+F 1 "2.2k" H 8868 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8800 3800 50  0001 C CNN
+F 3 "~" H 8800 3800 50  0001 C CNN
+	1    8800 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R4
 U 1 1 5C2F202B
-P 6250 1700
-F 0 "R4" H 6318 1746 50  0000 L CNN
-F 1 "2.2k" H 6318 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6250 1700 50  0001 C CNN
-F 3 "~" H 6250 1700 50  0001 C CNN
-	1    6250 1700
+P 9100 3800
+F 0 "R4" H 9168 3846 50  0000 L CNN
+F 1 "2.2k" H 9168 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9100 3800 50  0001 C CNN
+F 3 "~" H 9100 3800 50  0001 C CNN
+	1    9100 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -739,16 +729,6 @@ Wire Wire Line
 Connection ~ 5650 2500
 Wire Wire Line
 	5650 2500 6700 2500
-Wire Wire Line
-	5950 1800 5950 2600
-Connection ~ 5950 2600
-Wire Wire Line
-	5950 2600 5150 2600
-Wire Wire Line
-	6250 1800 6250 2800
-Connection ~ 6250 2800
-Wire Wire Line
-	6250 2800 5150 2800
 $Comp
 L power:+2V8 #PWR0118
 U 1 1 5C2FBB32
@@ -769,22 +749,12 @@ Wire Wire Line
 Connection ~ 5350 1550
 Wire Wire Line
 	5350 1550 5350 1600
-Wire Wire Line
-	5650 1550 5950 1550
-Wire Wire Line
-	5950 1550 5950 1600
-Connection ~ 5650 1550
-Wire Wire Line
-	5950 1550 6250 1550
-Wire Wire Line
-	6250 1550 6250 1600
-Connection ~ 5950 1550
 NoConn ~ 5150 4900
 NoConn ~ 5150 5000
 NoConn ~ 5150 5200
 NoConn ~ 5150 5900
 NoConn ~ 5150 6000
-NoConn ~ 5150 6200
+NoConn ~ 5150 5800
 NoConn ~ 5150 6100
 NoConn ~ 5150 6300
 NoConn ~ 5150 6400
@@ -829,10 +799,8 @@ F 3 "" H 5800 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 4950 5800 5000
-Text HLabel 6700 5800 2    50   Input ~ 0
+Text HLabel 6700 6200 2    50   Input ~ 0
 SENS_IMU_INT
-Wire Wire Line
-	5150 5800 6200 5800
 $Comp
 L Device:R_Small_US R202
 U 1 1 5C442EC0
@@ -857,11 +825,6 @@ F 3 "" H 6200 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4950 6200 5000
-Wire Wire Line
-	6200 5200 6200 5800
-Connection ~ 6200 5800
-Wire Wire Line
-	6200 5800 6700 5800
 Wire Wire Line
 	4050 1700 4050 1150
 Wire Wire Line
@@ -986,6 +949,55 @@ Wire Wire Line
 	7600 2450 7600 2500
 Wire Wire Line
 	7600 2800 7600 2850
+Wire Wire Line
+	5150 5600 6700 5600
+Wire Wire Line
+	5150 6200 6200 6200
+Wire Wire Line
+	6200 5200 6200 6200
+Connection ~ 6200 6200
+Wire Wire Line
+	6200 6200 6700 6200
+Text HLabel 9300 4000 2    50   Output ~ 0
+SENS_SCL
+Text HLabel 9300 4100 2    50   BiDi ~ 0
+SENS_SDA
+Wire Wire Line
+	9100 3900 9100 4100
+Wire Wire Line
+	9100 4100 9300 4100
+Wire Wire Line
+	9300 4000 8800 4000
+Wire Wire Line
+	8800 4000 8800 3900
+Wire Wire Line
+	8800 3700 8800 3600
+Wire Wire Line
+	8800 3600 9100 3600
+Wire Wire Line
+	9100 3600 9100 3700
+$Comp
+L power:+2V8 #PWR0145
+U 1 1 5C4096C0
+P 8800 3500
+F 0 "#PWR0145" H 8800 3350 50  0001 C CNN
+F 1 "+2V8" H 8815 3673 50  0000 C CNN
+F 2 "" H 8800 3500 50  0001 C CNN
+F 3 "" H 8800 3500 50  0001 C CNN
+	1    8800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3500 8800 3600
+Connection ~ 8800 3600
+Wire Wire Line
+	5150 2600 6700 2600
+Wire Wire Line
+	5150 2800 6700 2800
+Wire Wire Line
+	5150 4500 6700 4500
+Wire Wire Line
+	5150 4600 6700 4600
 Wire Bus Line
 	5950 4000 5950 4400
 $EndSCHEMATC
