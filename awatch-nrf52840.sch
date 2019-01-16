@@ -575,9 +575,9 @@ Wire Wire Line
 	6700 2400 5350 2400
 Wire Wire Line
 	5150 2500 5650 2500
-Text HLabel 6700 3600 2    50   Output ~ 0
-DISP_MOSI
 Text HLabel 6700 3500 2    50   Output ~ 0
+DISP_MOSI
+Text HLabel 6700 3600 2    50   Output ~ 0
 DISP_SCK
 Text HLabel 6700 3400 2    50   Output ~ 0
 DISP_CSN
