@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 6 10
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -22,6 +22,7 @@ F 0 "U601" H 6279 3321 50  0000 L CNN
 F 1 "SPK0641HT4H-1" H 6279 3230 50  0000 L CNN
 F 2 "awatch2-footprints:SPK0641HT4H" H 5200 3550 50  0001 C CNN
 F 3 "" H 5200 3550 50  0001 C CNN
+F 4 "423-1425-1-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    5200 3550
 	1    0    0    -1  
 $EndComp
@@ -95,9 +96,10 @@ L Device:C_Small C601
 U 1 1 5C45462C
 P 7150 3850
 F 0 "C601" H 7242 3896 50  0000 L CNN
-F 1 ".1µF" H 7242 3805 50  0000 L CNN
+F 1 "0.1µF X7R" H 7242 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7150 3850 50  0001 C CNN
 F 3 "~" H 7150 3850 50  0001 C CNN
+F 4 "1276-1061-1-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    7150 3850
 	1    0    0    -1  
 $EndComp

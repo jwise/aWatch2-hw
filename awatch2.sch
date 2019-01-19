@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title "AWatch2"
 Date ""
 Rev "bigboard0"
@@ -236,7 +236,7 @@ AR Path="/5C357822/5C7B5026" Ref="J?"  Part="1"
 AR Path="/5C7B5026" Ref="J104"  Part="1" 
 F 0 "J104" H 3520 2325 50  0000 C CNN
 F 1 "Conn_01x02" H 3520 2416 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3600 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 2650 50  0001 C CNN
 F 3 "~" H 3600 2650 50  0001 C CNN
 	1    3600 2650
 	-1   0    0    1   
@@ -343,6 +343,7 @@ F 0 "SW101" V 4396 5352 50  0000 R CNN
 F 1 "B3S-1000" V 4305 5352 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 4350 5600 50  0001 C CNN
 F 3 "" H 4350 5600 50  0001 C CNN
+F 4 "SW836CT-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    4350 5400
 	0    -1   -1   0   
 $EndComp
@@ -354,6 +355,7 @@ F 0 "SW102" V 4496 5352 50  0000 R CNN
 F 1 "B3S-1000" V 4405 5352 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 4450 5600 50  0001 C CNN
 F 3 "" H 4450 5600 50  0001 C CNN
+F 4 "SW836CT-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    4450 5400
 	0    -1   -1   0   
 $EndComp
@@ -365,6 +367,7 @@ F 0 "SW103" V 4596 5352 50  0000 R CNN
 F 1 "B3S-1000" V 4505 5352 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 4550 5600 50  0001 C CNN
 F 3 "" H 4550 5600 50  0001 C CNN
+F 4 "SW836CT-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    4550 5400
 	0    -1   -1   0   
 $EndComp
@@ -376,6 +379,7 @@ F 0 "SW104" V 4696 5352 50  0000 R CNN
 F 1 "B3S-1000" V 4605 5352 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 4650 5600 50  0001 C CNN
 F 3 "" H 4650 5600 50  0001 C CNN
+F 4 "SW836CT-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    4650 5400
 	0    -1   -1   0   
 $EndComp
@@ -435,7 +439,7 @@ AR Path="/5C357822/5C7D74BF" Ref="J?"  Part="1"
 AR Path="/5C7D74BF" Ref="J101"  Part="1" 
 F 0 "J101" H 2420 4075 50  0000 C CNN
 F 1 "Conn_01x02" H 2420 4166 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2500 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 4400 50  0001 C CNN
 F 3 "~" H 2500 4400 50  0001 C CNN
 	1    2500 4400
 	-1   0    0    1   
@@ -486,4 +490,10 @@ Wire Wire Line
 	6650 3550 6900 3550
 Wire Wire Line
 	6900 3450 6650 3450
+$Sheet
+S 9200 1800 850  500 
+U 5C43713C
+F0 "Mounting holes" 50
+F1 "awatch-mounting.sch" 50
+$EndSheet
 $EndSCHEMATC
