@@ -4531,7 +4531,7 @@
     (fp_text reference R304 (at 3.4125 0.1) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 12.5k (at 0 1.43) (layer F.Fab)
+    (fp_text value 12.4k (at 0 1.43) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0) (layer F.Fab)
@@ -5719,7 +5719,7 @@
     (fp_text reference R806 (at 0 -1.43) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1k (at 0 1.43) (layer F.Fab)
+    (fp_text value 2.2k (at 0 1.43) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -5791,7 +5791,7 @@
     (fp_text reference R808 (at 3.6125 0 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 50 (at 0 1.43 180) (layer F.Fab)
+    (fp_text value 160 (at 0 1.43 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
@@ -7498,7 +7498,7 @@
       (xy -0.952028 8.605013)) (layer B.SilkS) (width 0.01))
   )
 
-  (gr_text "thanks:\najw, ginge, kevtris, sgstair, mrwright, j4cbo,\nKatharine, Tation, ishotjr, …" (at 83.5 93.2) (layer B.SilkS)
+  (gr_text "thanks:\najw, ginge, kevtris, sgstair, mrwright,\nj4cbo, Katharine, Tation, ishotjr, …" (at 83.5 93.2) (layer B.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.2032)) (justify mirror))
   )
   (gr_text VBUS (at 44.5 54.4) (layer F.SilkS) (tstamp 5C4D6B27)
