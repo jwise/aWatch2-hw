@@ -238,6 +238,7 @@ F 0 "J104" H 3520 2325 50  0000 C CNN
 F 1 "Conn_01x02" H 3520 2416 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 2650 50  0001 C CNN
 F 3 "~" H 3600 2650 50  0001 C CNN
+F 4 "S1011EC-02-ND, S9341-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    3600 2650
 	-1   0    0    1   
 $EndComp
@@ -255,6 +256,7 @@ F 0 "J102" H 2520 2625 50  0000 C CNN
 F 1 "Conn_01x02" H 2520 2716 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2600 2950 50  0001 C CNN
 F 3 "~" H 2600 2950 50  0001 C CNN
+F 4 "S1011EC-02-ND, S9341-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    2600 2950
 	-1   0    0    1   
 $EndComp
@@ -272,6 +274,7 @@ F 0 "J103" H 2520 3075 50  0000 C CNN
 F 1 "Conn_01x02" H 2520 3166 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2600 3400 50  0001 C CNN
 F 3 "~" H 2600 3400 50  0001 C CNN
+F 4 "S1011EC-02-ND, S9341-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    2600 3400
 	-1   0    0    1   
 $EndComp
@@ -441,6 +444,7 @@ F 0 "J101" H 2420 4075 50  0000 C CNN
 F 1 "Conn_01x02" H 2420 4166 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 4400 50  0001 C CNN
 F 3 "~" H 2500 4400 50  0001 C CNN
+F 4 "S1011EC-02-ND, S9341-ND" H 0   0   50  0001 C CNN "DigiKey PN"
 	1    2500 4400
 	-1   0    0    1   
 $EndComp
