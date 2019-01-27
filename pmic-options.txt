@@ -1,0 +1,10 @@
+Digikey has 100 MAX14745-FEWX+
+  BUCK2 = 1.8V
+
+Mouser has 100 MAX14690A
+  BUCK2 = 1.8V
+
+Digikey has 100 MAX20335A
+  BUCK2 = 1.8V
+
+MAX20345 for future awatch designs that need step-up for MAX30102 HRM
