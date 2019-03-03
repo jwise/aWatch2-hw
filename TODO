@@ -1,0 +1,29 @@
+ALIVE:
+  * FTDI UART is alive (modulo known issue below with voltages)
+  * SWD is alive using ST-LINK v2
+  * nRF52840 CPU is alive
+  * nRF52840 high-speed crystal is alive
+  * nRF52840 radio (Bluetooth LE) is alive
+  * MAX14745 is alive and speaking I2C, buck regulator is alive
+  * IMU is alive and speaking I2C
+  * Pressure sensor is alive and speaking I2C
+
+STILL TO CHECK OUT:
+  * buttons
+  * LEDs
+  * display
+  * Maxim LDO
+  * Maxim charge circuitry
+  * QSPI flash
+  * microphone
+  * magnetometer
+  * vibrate driver
+  * nRF52840 DC-DC buck converter
+
+KNOWN ISSUES:
+  * FTDI needs VDDIO tied to +3.3, and needs level shifter
+  * FTDI SWD resistor is on wrong pin
+  * display connector is rotated 180 degrees (should be OK because display connector is dual contact)
+  * ambient light sensor footprint is mirrored
+  * manufacturability issues on vias for SWD and PMIC I2C buses leading to shorts; vias should be moved further apart (can be worked around with scalpel on current revision boards)
+  * I can't figure out where I put the third board from the first run
