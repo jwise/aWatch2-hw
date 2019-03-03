@@ -7,18 +7,20 @@ ALIVE:
   * MAX14745 is alive and speaking I2C, buck regulator is alive
   * IMU is alive and speaking I2C
   * Pressure sensor is alive and speaking I2C
+  * display
+  * LEDs
+  * nRF52840 DC-DC buck converter
+  * Maxim LDO
+  * Maxim buck
 
 STILL TO CHECK OUT:
   * buttons
-  * LEDs
-  * display
-  * Maxim LDO
   * Maxim charge circuitry
+  * Maxim ADC connection
   * QSPI flash
   * microphone
   * magnetometer
   * vibrate driver
-  * nRF52840 DC-DC buck converter
 
 KNOWN ISSUES:
   * FTDI needs VDDIO tied to +3.3, and needs level shifter

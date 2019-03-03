@@ -1,3 +1,6 @@
+MUST USE 14745 instead of 14690 -- 14690 cannot change buck2 after boot!
+14745 has different register mapping than 14690!
+
 Digikey has 100 MAX14745-FEWX+
   BUCK2 = 1.8V
 
