@@ -12,13 +12,13 @@ ALIVE:
   * nRF52840 DC-DC buck converter
   * Maxim LDO
   * Maxim buck
+  * buttons
+  * microphone
+  * QSPI flash
 
 STILL TO CHECK OUT:
-  * buttons
   * Maxim charge circuitry
   * Maxim ADC connection
-  * QSPI flash
-  * microphone
   * magnetometer
   * vibrate driver
 
@@ -29,3 +29,9 @@ KNOWN ISSUES:
   * ambient light sensor footprint is mirrored
   * manufacturability issues on vias for SWD and PMIC I2C buses leading to shorts; vias should be moved further apart (can be worked around with scalpel on current revision boards)
   * I can't figure out where I put the third board from the first run
+  * vibrate driver is tied to 0 instead of to Vdd
+
+TRACKING:
+  * max14745 does not ever come back to life after hard shutdown
+  * PMIC power monitor pin appears to be shorted to ground
+  * still no life on magnetometer; i2c is toggling, not sure if it is responding or not (need logic analyzer)
