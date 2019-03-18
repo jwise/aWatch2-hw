@@ -15,12 +15,13 @@ ALIVE:
   * buttons
   * microphone
   * QSPI flash
+  * vibrate driver I2C
+  * vibrate driver output
+  * Maxim charge circuitry
 
 STILL TO CHECK OUT:
-  * Maxim charge circuitry
-  * Maxim ADC connection
   * magnetometer
-  * vibrate driver
+  * ECO for max14745 power button issue
 
 KNOWN ISSUES:
   * FTDI needs VDDIO tied to +3.3, and needs level shifter
@@ -30,8 +31,10 @@ KNOWN ISSUES:
   * manufacturability issues on vias for SWD and PMIC I2C buses leading to shorts; vias should be moved further apart (can be worked around with scalpel on current revision boards)
   * I can't figure out where I put the third board from the first run
   * vibrate driver is tied to 0 instead of to Vdd
+  * PMIC power monitor pin appears to be shorted to ground (was shorted on nRF side); CHICKEN4 is fine
 
 TRACKING:
   * max14745 does not ever come back to life after hard shutdown
-  * PMIC power monitor pin appears to be shorted to ground
   * still no life on magnetometer; i2c is toggling, not sure if it is responding or not (need logic analyzer)
+  * battery only seems to charge at 50mA (maybe battery is just old)
+  * max14745 needs charge control registers reprogrammed after every USBIN event
