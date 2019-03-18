@@ -18,10 +18,11 @@ ALIVE:
   * vibrate driver I2C
   * vibrate driver output
   * Maxim charge circuitry
+  * part 1 of max14745 power button ECO (cut trace to nRF; did not add 100k in series yet)
 
 STILL TO CHECK OUT:
   * magnetometer
-  * ECO for max14745 power button issue
+  * part 2 of ECO for max14745 power button issue
 
 KNOWN ISSUES:
   * FTDI needs VDDIO tied to +3.3, and needs level shifter
@@ -30,11 +31,11 @@ KNOWN ISSUES:
   * ambient light sensor footprint is mirrored
   * manufacturability issues on vias for SWD and PMIC I2C buses leading to shorts; vias should be moved further apart (can be worked around with scalpel on current revision boards)
   * I can't figure out where I put the third board from the first run
-  * vibrate driver is tied to 0 instead of to Vdd
+  * vibrate driver enable is tied to 0 instead of to Vdd
   * PMIC power monitor pin appears to be shorted to ground (was shorted on nRF side); CHICKEN4 is fine
+  * nRF pulls power button low when nRF power is down; need to add 100k in series to nRF (means board will not ever wake up after being powered down with power button)
 
 TRACKING:
-  * max14745 does not ever come back to life after hard shutdown
   * still no life on magnetometer; i2c is toggling, not sure if it is responding or not (need logic analyzer)
   * battery only seems to charge at 50mA (maybe battery is just old)
   * max14745 needs charge control registers reprogrammed after every USBIN event
